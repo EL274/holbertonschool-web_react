@@ -35,10 +35,9 @@ table.appendChild(headerRow);
 
 studentsList.forEach((student) => {
     const row = document.createElement("tr");
-    
-    const cellLocation =  document.createElement("td");
-    cellFirstName.textContent = student.firstName;
 
+    const cellFirstName = document.createElement("td")
+    cellFirstName.textContent = student.firstName;
     const cellLocation = document.createElement("td");
     cellLocation.textContent = student.location;
 
@@ -49,3 +48,5 @@ studentsList.forEach((student) => {
 });
 
 body.appendChild(table);
+
+}
