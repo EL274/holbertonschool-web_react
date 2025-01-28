@@ -9,7 +9,7 @@ interface Teacher {
 
 const teacher1: Teacher =  {
     firstName: "john",
-    lastName: "Doe"
+    lastName: "Doe",
     fullTimeEmployee: true,
     location: "New York", 
 };
@@ -19,7 +19,7 @@ const teacher2: Teacher = {
     lastName: "Smith",
     fullTimeEmployee: false,
     yearsOfExperience: 5,
-    location: "Los Angeles"
+    location: "Los Angeles",
     contract: true,
 };
 
