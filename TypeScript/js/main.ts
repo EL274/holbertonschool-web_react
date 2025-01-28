@@ -12,6 +12,13 @@ const student1: Student = {
     location: "miami",
 };
 
+const student2: Student = {
+    firstName: "eric",
+    lastName: "Mak",
+    age: 26,
+    location: "los angels",
+};
+
 const studentsList: Student[] = [student1, student2];
 
 const body = document.querySelector("body");
@@ -41,4 +48,4 @@ studentsList.forEach((student) => {
     table.appendChild(row);
 });
 
-body?.appendChild(table);
+body.appendChild(table);
