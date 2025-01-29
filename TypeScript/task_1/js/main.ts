@@ -32,20 +32,20 @@ interface Directors extends Teacher {
 
 const director1: Directors = {
     firstName: "john",
-    lastName: "string",
-    fullTimeEmployee: boolean,
-    location: "string",
+    lastName: "Doe",
+    fullTimeEmployee: true,
+    location: "New York",
     numberOfReports: 17,     
 };
 
 const director2: Directors = {
-    firstName: "string",
-    lastName: "string",
-    fullTimeEmployee: boolean,
-    yearsOfExperience: "number",
-    location: "string",
-    numberOfReports: number,
-    contract: boolean,
+    firstName: "Jane",
+    lastName: "smith",
+    fullTimeEmployee: false,
+    yearsOfExperience: 10,
+    location: "Los Angeles",
+    numberOfReports: 5,
+    contract: true,
 };
 
 console.log(director1);
