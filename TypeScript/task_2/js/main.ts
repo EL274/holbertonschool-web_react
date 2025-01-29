@@ -48,4 +48,27 @@ interface DirectorInterface {
       return new Director();
     }
   }
+   
+  interface Director {
+    firstName: string;
+    lastName: string;
+    workDirectorTasks(): void;
+  }
   
+  interface Teacher {
+    firstName: string;
+    lastName: string;
+    workTeacherTasks(): void;
+  }
+  
+  function isDirector(employee: Director | Teacher): employee is Director {
+    return (employee as Director).workDirectorTasks !== undefined;
+  }
+  
+  function executeWork(employee: Director | Teacher): void {
+    if (isDirector(employee)) {
+      employee.workDirectorTasks();
+    } else {
+      employee.workTeacherTasks();
+    }
+  }
