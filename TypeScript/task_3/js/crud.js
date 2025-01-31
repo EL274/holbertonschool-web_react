@@ -1,6 +1,6 @@
 export function insertRow(row) {
     console.log('InsertRow', row);
-    return math.floor(Math.random() * Math.floor(100));
+    return math.floor(Math.random() * Math.floor(1000));
 }
 
 export function deleteRow(rowId) {
