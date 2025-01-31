@@ -1,5 +1,5 @@
 export function insertRow(row) {
-    console.log('insertRow', row);
+    console.log('InsertRow', row);
     return math.floor(Math.random() * Math.floor(100));
 }
 

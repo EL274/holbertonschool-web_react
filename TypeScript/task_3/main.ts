@@ -1,22 +1,15 @@
-// task_3/main.ts
-/// <reference path="./js/crud.d.ts" />
+import * as CRUD from crud;
 
-import { RowID, RowElement } from './interface';
-import * as CRUD from './js/crud';
+const row = { firstName: 'Guillaume', lastName: 'Salva' };
 
-// Crée un objet row
-const row: RowElement = {
-  firstName: 'Guillaume',
-  lastName: 'Salva',
-};
-
-// Insère une ligne et récupère le nouveau RowID
-const newRowID: RowID = CRUD.insertRow(row);
+// Insertion
+const newRowID = CRUD.insertRow(row);
 console.log(`Inserted row ID: ${newRowID}`);
 
-// Met à jour la ligne avec un champ age
-const updatedRow: RowElement = { ...row, age: 23 };
-CRUD.updateRow(newRowID, updatedRow);
+// Mise à jour
+const updatedRow = { ...row, age: 23 };
+const updatedRowID = CRUD.updateRow(newRowID, updatedRow);
+console.log(`Updated row ID: ${updatedRowID}`);
 
-// Supprime la ligne
-CRUD.deleteRow(newRowID);
+// Suppression
+CRUD.deleteRow(updatedRowID); 
